@@ -525,6 +525,8 @@ p {
 .footer .add {
     width: 206px;
     height: 80px;
+
+    margin-right: 93px;
 }
 
 .footer .add-title {
@@ -572,6 +574,63 @@ p {
     fill: #FFFFFF;
 
 }
+
+.subscribe-title {    
+    font-size: 14px;
+    line-height: 1.14;    
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    color: #FFFFFF;
+}
+
+.subscribe-form {
+    display: flex;   
+}
+
+.subscribe-input {
+    width: 358px;
+    height: 50px;
+
+    color: #fff;
+
+    margin-right: 10px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+    
+    padding: 0;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.subscribe .button-text {    
+    margin-right: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;    
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+}
+
+
+
+
 
 /* Portfolio */
 
@@ -737,6 +796,8 @@ img {
 
     width: 528px;
     height: 581px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -766,4 +827,177 @@ img {
 .cross {
     width: 18px;
     height: 18px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.drop-bg .button:hover .cross, 
+.drop-bg .button:focus .cross {
+    fill: var(--accent-color);
+}
+
+.modal-title {
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    margin-bottom: 12px;
+
+    color: var(--head-text-color);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;    
+
+    width: 448px;
+    margin-left: 41px;
+}
+
+.form-item {    
+    display: flex;
+    align-content: flex-end;    
+    padding-top: 18px;
+
+    position: relative;
+}
+
+.form-item + .form-item {
+    margin-top: 10px;
+}
+
+.form-label .label-name {
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+
+.form-label {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input {
+    width: 448px;
+    height: 40px;
+    padding: 0;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    
+}
+
+.form-label:focus-within .modal-input {
+    outline: none;
+    border: 1px solid var(--accent-color);     
+}
+
+.form-item:focus-within .form-label {    
+    fill: var(--accent-color);
+}
+
+.form-item.comment {
+    margin-bottom: 20px;
+}
+
+.modal-input.comment-input {
+    height: 120px;
+    padding: 12px 16px;
+
+    resize: none;
+}
+
+::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.label-check {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.check-icon {
+    margin-right: 7px;
+
+    fill: #fff;
+    border: var(--head-text-color) solid 2px;
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-cneck:checked + .check-icon {
+    border: var(--accent-color) solid 2px;
+    background-color: var(--accent-color);    
+}
+
+.input-cneck {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+.check-text, 
+.check-link {
+    font-size: 14px;
+    line-height: 1.71px;
+}
+
+.check-link{
+   color: var(--accent-color);
+}
+
+.modal-form .form-button {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button .button-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;        
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;    
+}
+
+.modal-form .form-button:hover, 
+.modal-form .form-button:focus {
+    background-color: #188CE8;
+}
+
+
