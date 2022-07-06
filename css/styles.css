@@ -613,6 +613,7 @@ p {
     padding: 0;
 
     background-color: var(--accent-color);
+    border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -856,8 +857,7 @@ img {
 }
 
 .form-item {    
-    display: flex;
-    align-content: flex-end;    
+    display: flex;      
     padding-top: 18px;
 
     position: relative;
@@ -977,6 +977,8 @@ img {
 .modal-form .form-button {
     width: 200px;
     height: 50px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
 
     background-color: var(--accent-color);
